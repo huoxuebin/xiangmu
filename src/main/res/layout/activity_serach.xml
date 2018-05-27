@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SerachActivity">
+
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:background="@drawable/serach_kuang"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_height="50dp">
+
+<!--
+        android:imeOptions="actionSearch"
+-->
+        <EditText
+
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:background="@null"
+            android:id="@+id/edname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="性感女士内衣全场1折"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+
+
+           />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:src="@drawable/root"
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            android:id="@+id/sosuo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="搜索"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="热搜"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+    <com.example.jingdong.Liushi.XCFlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+    </com.example.jingdong.Liushi.XCFlowLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/yin"
+    >
+    <TextView
+
+        android:id="@+id/jilu"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="历史记录"
+        android:textColor="#000000"
+
+        android:textSize="22dp"
+
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        android:layout_below="@id/jilu">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            android:onClick="delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="全部清除"
+            android:layout_alignParentBottom="true"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

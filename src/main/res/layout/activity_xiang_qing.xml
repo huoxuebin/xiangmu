@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.XiangQingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent2"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/leftjiantou"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/fenxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sandian"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/xiangqingbanner"
+        ></com.youth.banner.Banner>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:id="@+id/xqtitle"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="#f00"
+        android:id="@+id/xqprice"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="#f00"
+        android:id="@+id/yhprice"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看地图"
+        android:layout_marginTop="20dp"
+       android:textSize="18dp"
+        android:onClick="weizhi"
+        android:padding="5dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="联系客服"
+           android:background="@drawable/home_title_bar_search_corner_bg"
+            />
+        <Button
+            android:onClick="addshop"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="加入购物车"
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".view.JoinActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent2"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/fanhui2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cha"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="京东注册"
+            android:textSize="25dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/jd_buy_icon" />
+
+    <EditText
+        android:background="@drawable/serach_kuang"
+        android:layout_marginTop="20dp"
+        android:id="@+id/registername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:singleLine="true"
+        android:hint="请输入手机号"
+
+        />
+
+    <EditText
+        android:background="@drawable/serach_kuang"
+        android:id="@+id/registerpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:hint="请输入密码"
+
+        />
+
+    <Button
+        android:onClick="register"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/home_title_bar_search_corner_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        />
+
+
+
+
+</LinearLayout>

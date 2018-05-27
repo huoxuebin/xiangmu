@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.DituActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="40dp"
+        android:hint="输入搜索内容"
+        android:background="@drawable/home_title_bar_search_corner_bg"
+        />
+        <Button
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="搜索"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:background="@drawable/home_title_bar_search_corner_bg"
+
+            android:onClick="putong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="普通模式"
+            />
+
+        <Button
+            android:background="@drawable/home_title_bar_search_corner_bg"
+
+            android:onClick="yejian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="夜间模式"
+            />
+
+
+        <Button
+            android:onClick="weixing"
+            android:background="@drawable/home_title_bar_search_corner_bg"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="卫星模式"
+            />
+
+
+        <Button
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            android:onClick="lukuang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="实时路况"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+</LinearLayout>
